@@ -7,8 +7,6 @@ export function Chat() {
   const messages = useAppSelector((chatSlice) => chatSlice.chat.messages);
   const dispatch = useAppDispatch();
 
-  dispatch(fetchMessageThunk);
-
   return (
     <div>
       {messages.map((it, i) => (
